@@ -20,7 +20,7 @@ const categories = {
   mythology: 20
 };
 
-app.get('/question', async (req, res) => {
+app.get('/api/question', async (req, res) => {
   const subject = req.query.subject?.toLowerCase() || 'english';
   const category = categories[subject] || categories.english;
 
